@@ -4,7 +4,7 @@ Theme URI: http://www.ansonika.com/foores/
 Author: Ansonika
 Author URI: http://themeforest.net/user/Ansonika/
 
-[Table of contents] 
+[Table of contents]
 
 1. SITE STRUCTURE and TYPOGRAPHY
 - 1.1 Typography
@@ -155,7 +155,7 @@ body {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.7;
-  font-family: "Poppins", Helvetica, sans-serif;
+  font-family: interstate, sans-serif;
   color: #444;
 }
 
@@ -390,7 +390,7 @@ a.btn_play:hover {
   bottom: 0;
   z-index: 99;
 }
-.frame.white {
+/* .frame.white {
   background: url(../img/frame_white.png) 0 0 repeat-x;
   background-size: 10px 3px;
 }
@@ -402,7 +402,7 @@ a.btn_play:hover {
   background: url(../img/frame_footer.png) 0 0 repeat-x;
   background-size: 10px 3px;
   top: -3px;
-}
+} */
 
 /* Header */
 header {
@@ -1180,6 +1180,7 @@ ul#top_menu li a.search-overlay-menu-btn:before {
 .hero_single .opacity-mask h3 {
   color: #fff;
   line-height: 1;
+  font-family: abolition, sans-serif;
   font-size: 48px;
   font-size: 3rem;
   margin: 0;
@@ -1238,7 +1239,7 @@ ul#top_menu li a.search-overlay-menu-btn:before {
 .hero_single.version_2 .opacity-mask p {
   font-size: 36px;
   font-size: 2.25rem;
-  font-family: 'Lora', serif;
+  font-family: interstate, sans-serif;
 }
 @media (max-width: 767px) {
   .hero_single.version_2 .opacity-mask p {
@@ -1268,7 +1269,7 @@ ul#top_menu li a.search-overlay-menu-btn:before {
   margin-bottom: 15px;
 }
 .hero_single.inner_pages p {
-  font-family: 'Lora', serif;
+  font-family: interstate, sans-serif;
 }
 
 @keyframes smoothScroll {
@@ -1382,10 +1383,11 @@ ul#top_menu li a.search-overlay-menu-btn:before {
 .slide-text h2,
 .slide-text h3 {
   font-size: 46px;
-  font-size: 2.875rem;
+  font-size: 3.875rem;
   font-weight: 900;
   text-transform: uppercase;
   line-height: 1;
+  letter-spacing: 0.25rem;
 }
 @media (max-width: 767px) {
   .slide-text h2,
@@ -1404,6 +1406,7 @@ ul#top_menu li a.search-overlay-menu-btn:before {
 }
 .slide-text.white h2,
 .slide-text.white h3 {
+  font-family: abolition, sans-serif;
   color: #fff;
 }
 
@@ -1550,15 +1553,17 @@ ul#banners_grid li a.img_container .short_info {
 }
 ul#banners_grid li a.img_container .short_info h3 {
   color: #fff;
+  font-family: abolition, sans-serif;
   font-size: 26px;
-  font-size: 1.625rem;
+  font-size: 2.725rem;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
   font-weight: 900;
+  letter-spacing: 0.15rem;
 }
 ul#banners_grid li a.img_container .short_info p {
-  font-family: 'Lora', serif;
+  font-family: interstate, sans-serif;
   font-size: 18px;
   font-size: 1.125rem;
   margin-bottom: 0;
@@ -1664,7 +1669,7 @@ ul#banners_grid li a.img_container .short_info p {
   }
 }
 .call_section .box_1 {
-  background-color: #262626;
+  background-color: rgb(38, 38, 38, 0.68);
   color: #fff;
   padding: 45px;
 }
@@ -1675,6 +1680,7 @@ ul#banners_grid li a.img_container .short_info p {
 }
 .call_section .box_1 h2 {
   color: #fff;
+  font-family: abolition, sans-serif;
   font-size: 42px;
   font-size: 2.625rem;
   margin-bottom: 20px;
@@ -1682,7 +1688,7 @@ ul#banners_grid li a.img_container .short_info p {
 .call_section .box_1 h2 span {
   font-size: 24px;
   font-size: 1.5rem;
-  font-family: 'Lora', serif;
+  font-family: interstate, sans-serif;
   display: block;
 }
 
@@ -1714,6 +1720,7 @@ ul#banners_grid li a.img_container .short_info p {
   }
 }
 .main_title h2 {
+  font-family: abolition, sans-serif;
   font-size: 32px;
   font-size: 2rem;
   max-width: 600px;
@@ -1753,8 +1760,10 @@ ul#banners_grid li a.img_container .short_info p {
 }
 .main_title.center h2 {
   max-width: inherit;
-  font-size: 34px;
-  font-size: 2.125rem;
+  font-size: 2.25rem;
+  font-family: abolition, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 @media (max-width: 767px) {
   .main_title.center h2 {
@@ -1818,7 +1827,7 @@ ul#banners_grid li a.img_container .short_info p {
 .banner .wrapper p {
   font-size: 18px;
   font-size: 1.125rem;
-  font-family: 'Lora', serif;
+  font-family: interstate, sans-serif;
 }
 
 /*-------- 2.2 Menu pages --------*/
@@ -1827,6 +1836,14 @@ ul#banners_grid li a.img_container .short_info p {
   padding: 20px 0 0 90px;
   margin-bottom: 30px;
   min-height: 80px;
+}
+@media (max-width: 991px) {
+  .menu_item {
+    position: relative;
+    padding: 10px 15px 0 15px;
+    margin-bottom: 30px;
+    min-height: 80px;
+  }
 }
 .menu_item figure {
   position: absolute;
@@ -1853,10 +1870,10 @@ ul#banners_grid li a.img_container .short_info p {
   transform: translate(-50%, -50%) scale(1);
 }
 .menu_item .menu_title {
-  background: radial-gradient(#d5d5d5 40%, rgba(0, 0, 0, 0) 10%);
+  /* background: radial-gradient(#d5d5d5 40%, rgba(0, 0, 0, 0) 10%);
   background-position: 0 13px;
   background-size: 4px 4px;
-  background-repeat: repeat-x;
+  background-repeat: repeat-x; */
 }
 .menu_item .menu_title h3 {
   background-color: #fff;
@@ -1874,7 +1891,7 @@ ul#banners_grid li a.img_container .short_info p {
   padding-left: 3px;
 }
 .menu_item p {
-  font-family: 'Lora', serif;
+  font-family: interstate, sans-serif;
   margin-bottom: 0;
 }
 .menu_item.order {
@@ -1934,6 +1951,12 @@ ul#banners_grid li a.img_container .short_info p {
 .menu_item .menu_title h3,
 .menu_item .menu_title em {
   background-color: #fff;
+  font-size: 1.45rem;
+  font-family: abolition, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.65rem;
+  letter-spacing: 0.09rem;
 }
 
 .menu_item_grid {
@@ -1946,7 +1969,7 @@ ul#banners_grid li a.img_container .short_info p {
   margin: 15px 0 0 0;
 }
 .menu_item_grid p {
-  font-family: 'Lora', serif;
+  font-family: interstate, sans-serif;
   margin: 0 0 10px 0;
 }
 
@@ -3933,7 +3956,7 @@ footer .copy {
   padding-left: 30px;
   font-size: 21px;
   font-size: 1.3125rem;
-  font-family: 'Lora', serif;
+  font-family: interstate, sans-serif;
   line-height: 1.3;
   text-align: left;
 }
