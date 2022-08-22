@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Foores Restaurant">
-    <meta name="author" content="Ansonika">
-    <title>Foores Restaurant</title>
+    <meta name="description" content="five 55 los angeles sports bar">
+    <meta name="author" content="five 55 la">
+    <title>Five 55 LA</title>
 </head>
 
 <body>
@@ -23,11 +23,11 @@ $mail = new PHPMailer(true);
 try {
 
     //Recipients - main edits
-    $mail->setFrom('info@foores.com', 'Message from Foores');                    // Email Address and Name FROM
-    $mail->addAddress('info@foores.com', 'Jhon Doe');                            // Email Address and Name TO - Name is optional
-    $mail->addReplyTo('noreply@foores.com', 'Message from Foores');              // Email Address and Name NOREPLY
-    $mail->isHTML(true);                                                       
-    $mail->Subject = 'Message from Foores';                                      // Email Subject    
+    $mail->setFrom('info@five55la.com', 'Message from five 55');                    // Email Address and Name FROM
+    $mail->addAddress('info@five55la.com', 'Five 55');                            // Email Address and Name TO - Name is optional
+    $mail->addReplyTo('info@five55la.com', 'Message from five 55');              // Email Address and Name NOREPLY
+    $mail->isHTML(true);
+    $mail->Subject = 'Message from Five 55';                                      // Email Subject
 
     // Email verification, do not edit
     function isEmail($email_newsletter ) {
@@ -40,13 +40,13 @@ try {
     if(trim($email_newsletter) == '') {
         echo '<div class="error_message">Please enter a valid email address.</div>';
         exit();
-    }                        
-            
+    }
+
     // Get the email's html content
     $email_html = file_get_contents('template-email.html');
 
     // Setup html content
-    $e_content = "$email_newsletter would like to subscribe to the newsletter.";
+    $e_content = "$email_newsletter Has been subscribed to the newsletter.";
     $body = str_replace(array('message'),array($e_content),$email_html);
     $mail->MsgHTML($body);
 
@@ -56,8 +56,8 @@ try {
     $mail->ClearAddresses();
     $mail->addAddress($_POST['email_newsletter']); // Email address entered on form
     $mail->isHTML(true);
-    $mail->Subject    = 'Thank you for join to Foores Newsletter'; // Custom subject
-    
+    $mail->Subject    = 'Thanks for signing up for the FIVE 55 Newsletter'; // Custom subject
+
     // Get the email's html content
     $email_html_confirm = file_get_contents('confirmation.html');
 
@@ -74,7 +74,7 @@ try {
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
-?> 
+?>
 
 </body>
 </html>

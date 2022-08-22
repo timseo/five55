@@ -1,5 +1,5 @@
 /*
-[Table of contents] 
+[Table of contents]
 
 - 1.0 Bootstrap Library 4.5
 - 1.1 Icons
@@ -12216,7 +12216,7 @@ a.text-dark:focus, a.text-dark:hover {
 }
 .owl-theme .owl-dots .owl-dot span::before {
   content: '';
-  background-color: #978667 !important;
+  background-color: #f27321 !important;
   display: block;
   border-radius: 50%;
   width: 8px;
