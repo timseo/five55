@@ -175,7 +175,7 @@ h6 {
 }
 
 p {
-  margin-bottom: 20px;
+  margin-bottom: 38px;
 }
 
 strong {
@@ -1389,8 +1389,8 @@ ul#top_menu li a.search-overlay-menu-btn:before {
 
 .slide-text {
   padding-top: 15px;
-  font-size: 21px;
-  font-size: 1.3125rem;
+  /* font-size: 21px; */
+  font-size: 1.1rem;
 }
 .slide-text h2,
 .slide-text h3 {
